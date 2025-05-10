@@ -16,9 +16,9 @@ To find longest common subsequence using Dynamic Programming.
 
 5. Loop through the matrix from i = 1 to m and j = 1 to n:
 
-If str1[i-1] == str2[j-1], set matrix[i][j] = 1 + matrix[i-1][j-1]
+   If str1[i-1] == str2[j-1], set matrix[i][j] = 1 + matrix[i-1][j-1]
 
-Else, set matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1])
+   Else, set matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1])
 
 6. After filling the matrix, the value at matrix[m][n] holds the length of the LCS.
 
